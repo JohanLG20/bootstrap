@@ -28,6 +28,10 @@ p, .digitTitle {
     font-family: 'SegoeUI', arial, sans-serif;
 }
 
+#carouselCaption{
+    font-size: clamp(1rem,2rem,3rem);
+}
+
 h2.responsive {
     font-size: 2.2rem
 }
@@ -62,4 +66,16 @@ h2.responsive {
     h2.responsive {
         font-size: clamp(1rem, 1vw + .5rem, 2rem);
     }
+
+    #catalogButton{
+        font-size: clamp(.1rem, .7em, 2rem);
+    }
+}
+
+@media (min-width:1400px) {
+
+    #catalogButton{
+        font-size: clamp(1rem, 1vw + .2rem,2rem)
+    }
+    
 }
