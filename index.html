@@ -15,10 +15,10 @@
 </head>
 
 <body class="container">
+    <!-- Header -->
     <header>
-        
-        <hr class="border border-dark bg-dark opacity-100 border-3" size="20px"/>
-        
+        <hr class="border border-dark bg-dark opacity-100 border-3" size="20px" />
+
         <div id="siteIdentity"
             class="d-flex flex-column mt-4 text-center flex-lg-row align-items-lg-end justify-content-center gap-lg-3">
             <p>Magazine En Ligne</p>
@@ -32,7 +32,8 @@
                 <span class="navbar-toggler-icon fs-2"></span>
             </button>
 
-            <div id="mainMenu" class="navbar-collapse collapse border border-4 rounded-0 bg-light text-dark text-decoration none">
+            <div id="mainMenu"
+                class="navbar-collapse collapse border border-4 rounded-0 bg-light text-dark text-decoration none">
                 <ul
                     class="navbar-nav me-auto text-center text-uppercase w-100 justify-content-center fs-4 border-bottom-0">
                     <li class="nav-item flex-fill"><a href="#" aria-current="page" class="nav-link active"><span
@@ -57,10 +58,11 @@
 
     </header>
 
+    <!-- Main -->
     <main>
-        <!--Carousel-->
 
-        <div class="position-relative d-none d-lg-block p-0 mb-5 mt-2">
+        <!--Carousel-->
+        <div class="position-relative d-none d-lg-block p-0 mb-4 mt-2">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -99,52 +101,57 @@
             <div class="d-flex mb-4">
 
                 <hr class="flex-fill border border-3 border-secondary opacity-75 bg-secondary">
-                <h2 class="text-uppercase text-center mt-2 fs-3 w-auto" id="titleNewCollection">Nouvelle collection</h2>
+                <h2 class="text-uppercase text-center mt-2 fs-3 fw-bolder" id="titleNewCollection">Nouvelle collection</h2>
                 <hr class="flex-fill border border-3 border-secondary opacity-75 bg-secondary">
 
             </div>
 
+            <!-- Collections card -->
             <div id="cards" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center g-4">
-                <div class="col">
+                <div class="col-6 col-lg-3">
                     <div class="card rounded-0 border-4 bg-light p-0">
                         <div class="card-header border-4">
                             <h3 class="text-uppercase text-center fs-4">Chambres</h3>
                         </div>
                         <div class="card-body bg-light">
-                            <img class="w-100" src="images/vignette-chambre.jpg" alt="Vignette Chambres">
+                            <a href="#"><img class="w-100" src="images/vignette-chambre.jpg"
+                                    alt="Vignette Chambres"></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-6 col-lg-3">
                     <div class="card rounded-0 border-4 p-0">
                         <div class="card-header border-4">
                             <h3 class="text-uppercase text-center fs-4">Cuisines</h3>
                         </div>
                         <div class="card-body bg-light">
-                            <img class="w-100" src="images/vignette-cuisine.jpg" alt="Vignette Cuisines">
+                            <a href="#"><img class="w-100" src="images/vignette-cuisine.jpg"
+                                    alt="Vignette Cuisines"></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-6 col-lg-3">
                     <div class="card rounded-0 border-4 p-0">
                         <div class="card-header border-4">
                             <h3 class="text-uppercase text-center fs-4">Salons</h3>
                         </div>
                         <div class="card-body bg-light">
-                            <img class="w-100" src="images/vignette-fauteuil.jpg" alt="Vignette Salons">
+                            <a href="#"><img class="w-100" src="images/vignette-fauteuil.jpg" alt="Vignette Salons">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-6 col-lg-3">
                     <div class="card rounded-0 border-4 p-0">
                         <div class="card-header border-4">
                             <h3 class="text-uppercase text-center fs-4">Bains</h3>
                         </div>
                         <div class="card-body bg-light">
-                            <img class="w-100" src="images/vignette-sallebain.jpg" alt="Vignette Salle de bains">
+                            <a href="#"><img class="w-100" src="images/vignette-sallebain.jpg"
+                                    alt="Vignette Salle de bains"></a>
                         </div>
                     </div>
                 </div>
@@ -163,48 +170,40 @@
                     <hr class="flex-fill mt-1 border border-5 border-secondary opacity-75">
                 </div>
                 <!-- Cards -->
-                <div id="newsCards" class="row row-gap-2 gap-lg-0 justify-content-center align-items-center">
-                    <div class="col-12 col-sm-6 col-lg-12">
-                        <div class="card border-4 rounded-0 p-0 h-auto">
-                            <div class="card-header border-bottom-0 pt-4">
-                                <h3 class="digitTitle fs-5 fw-bold text-uppercase">Pas de dernières actualités</h3>
-                            </div>
-
-                            <div class="card-body bg-light ">
-                                <h2 class="digitTitle fs-5 text-uppercase">21 octobre 2026</h2>
-                                <p><small>Revenez rapidement, on vous prépare des offres toujours plus incroyable</small></p>
-
-                            </div>
-                            <div class="card-footer border-top-0 text-end">
-                                <a type="button"
-                                    class="btn btn-primary text-uppercase text-dark bg-light fw-bold btn-outline-light"
+                <div id="newsCards"
+                    class="d-flex flex-column flex-md-row flex-lg-column gap-2 gap-lg-0 justify-content-center align-items-center">
+                    <div class="flex-grow">
+                        <div class="card border-4 rounded-0 pt-4 bg-light">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <h3 class="card-title digitTitle fs-5 fw-bold text-uppercase ">Pas de dernières
+                                    actualités</h3>
+                                <p><small>Revenez rapidement, on vous prépare des offres toujours plus
+                                        incroyable</small></p>
+                                <button class="btn btn-primary text-uppercase text-dark bg-light fw-bold btn-outline-light align-self-end"
                                     data-bs-toggle="modal" data-bs-target="#newsModal">+
-                                    D'infos</a>
+                                    D'infos</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-12">
-                        <div class="card border-4 rounded-0 p-0 noBorderTopNews h-auto">
-                            <div class="card-header border-bottom-0 pt-4">
-                                <h3 class="digitTitle fs-5 fw-bold text-uppercase">Pas de dernières actualités</h3>
-                            </div>
-
-                            <div class="card-body bg-light">
-                                <p><small>Revenez rapidement, on vous prépare des offres toujours plus incroyable</small></p>
-                            </div>
-                            <div class="card-footer border-top-0 text-end">
-                                <a class="btn btn-primary text-uppercase text-dark bg-light fw-bold btn-outline-light"
+                    <div class="flex-grow">
+                        <div class="card border-4 rounded-0 p-0 noBorderTopNews pt-4 bg-light">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <h3 class="card-title digitTitle fs-5 fw-bold text-uppercase">Pas de dernières
+                                    actualités</h3>
+                                <p><small>Revenez rapidement, on vous prépare des offres toujours plus
+                                        incroyable</small></p>
+                                <button class="btn btn-primary text-uppercase text-dark bg-light fw-bold btn-outline-light align-self-end"
                                     data-bs-toggle="modal" data-bs-target="#newsModal">+
-                                    D'infos</a>
+                                    D'infos</button>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 
             <!-- About-->
-            <div id="about" class="row col-12 col-md-6 mb-4 col-lg-4 gap-4 align-self-center">
+            <div id="about" class="row col-12 col-md-6 mb-4 col-lg-5 gap-4 align-self-center">
                 <h2 class="fw-bold fs-3">Quelques mots sur notre société</h2>
                 <p class="fw-bold">Découvrez notre sélection de meubles contemporains et de mobilier morderne et design
                     pour aménager
@@ -214,21 +213,21 @@
                 <p class="fw-bold"><small>> Noël 2026 est bientôt là ! Célébrez un Noël design avec notre sélection
                         d'idées de cadeaux originales et insolites. Découvrez notre sélection d'objets ludiques et
                         insolites et faites le plein d'idées</small></p>
-                
-                <a class="btn border-0 text-uppercase text-dark bg- fw-bold text-start"
-                                  >+
-                                    D'infos</a>
+
+                <a class="btn border-0 text-uppercase text-dark bg- fw-bold text-start">+
+                    D'infos</a>
             </div>
 
             <!-- Catalog -->
-            <div id="catalog" class="col-12 col-md-6 mb-4 col-lg-4">
-                <div class="position-relative mb-2">
+            <div id="catalog" class="col-12 col-md-6 mb-4 col-lg-3">
+                <div class="position-relative mb-4">
                     <img src="images/fond-book-sansbouton.png" alt="Catalogue image" class="w-100">
                     <div
                         class="col-6 position-absolute top-0 d-flex flex-column h-100 justify-content-around align-items-center">
-                        <h2 class=" p-2 text-uppercase fs-0 fw-bold ms-4 responsive lh-base">Réservez <br> notre <br> catalogue
+                        <h2 class=" p-2 text-uppercase fs-0 fw-bold ms-4 responsive lh-base">Réservez <br> notre <br>
+                            catalogue
                         </h2>
-                        <a href="" class="btn col-7 bottom-0 mb-3 text-light opacity-100" id="catalogButton">Cliquez
+                        <a href="" class="btn col-7 bottom-0 mb-3 text-light opacity-100 fs-lg-4" id="catalogButton">Cliquez
                             <br> ICI</a>
                     </div>
 
@@ -251,7 +250,8 @@
             aria-hidden="true">
             <div class="modal-dialog bg-light ">
                 <div class="modal-content rounded-0 border-5 border-secondary border-opacity-100">
-                    <div class="modal-header border-3 border-top-0 border-start-0 border-end-0 border-bottom-1 border-secondary border-opacity-75">
+                    <div
+                        class="modal-header border-3 border-top-0 border-start-0 border-end-0 border-bottom-1 border-secondary border-opacity-75">
                         <h1 class="modal-title fs-5"></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -262,9 +262,10 @@
                         </div>
                         <div id="keywords" class="text-start d-flex gap-1"></div>
                     </div>
-                            
-                    <div class="modal-footer d-flex justify-content-around border-3 border-top-1 border-start-0 border-end-0 border-bottom-0 border-secondary border-opacity-75">
-                        
+
+                    <div
+                        class="modal-footer d-flex justify-content-around border-3 border-top-1 border-start-0 border-end-0 border-bottom-0 border-secondary border-opacity-75">
+
 
                         <p id="author" class="text-end"></p>
                     </div>
